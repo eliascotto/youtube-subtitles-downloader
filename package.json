@@ -1,0 +1,45 @@
+{
+  "name": "youtube-subtitles-downloader",
+  "version": "1.0.0",
+  "description": "Youtube subtitles scraper library and CLI",
+  "homepage": "https://github.com/elias94/youtube-subtitles-downloader",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "keywords": [
+    "youtube",
+    "subtitles"
+  ],
+  "author": {
+    "name": "Elia Scotto",
+    "url": "https://github.com/elias94"
+  },
+  "bugs": {
+    "url": "https://github.com/elias94/youtube-subtitles-downloader/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elias94/youtube-subtitles-downloader.git"
+  },
+  "bin": {
+    "ytsub": "./cli.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && babel src --out-file dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "commander": "^6.1.0",
+    "core-js": "^3.6.5",
+    "he": "^1.2.0",
+    "iso-639-1": "^2.1.4",
+    "locale-code": "^2.0.2",
+    "striptags": "^3.1.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5"
+  }
+}
