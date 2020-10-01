@@ -18,7 +18,7 @@ install global for use the CLI
 npm install -g youtube-subtitles-downloader
 ```
 
-## Library
+## Usage example
 
 ```javascript
 const id = YTSubtitles.extractIdFromUrl('https://www.youtube.com/watch?v=vG-QZOTc5_Q')
@@ -31,7 +31,7 @@ YTSubtitles.getLanguagesList(id).then((resp) => {
 })
 ```
 
-### YTSubtitles
+## YTSubtitles
 
 #### `async YTSubtitles.getSubtitles(videoID, languageCode)`
 
@@ -46,7 +46,7 @@ Download the subtitles of the video using the optional language code
 
 Array with the fetched subtitles content
 
-#### `async getLanguagesList(videoID)`
+#### `async YTSubtitles.getLanguagesList(videoID)`
 
 Get the languages list for the video
 
@@ -58,7 +58,7 @@ Get the languages list for the video
 
 An array of subtitles objects (YTSub)
 
-#### `extractIdFromUrl(url)`
+#### `YTSubtitles.extractIdFromUrl(url)`
 
 Extract the video ID
 
@@ -70,7 +70,7 @@ Extract the video ID
 
 String video ID
 
-### YTSub
+## YTSub
 
 #### `async fetch()`
 
@@ -99,6 +99,8 @@ Translate the subtitle into another language returning a new YTSub object
 ##### Return
 
 A new YTSub object constructed with the new language
+
+### Properties
 
 #### `translationLanguages`
 
