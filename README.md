@@ -30,6 +30,15 @@ YTSubtitles.getLanguagesList(id).then((resp) => {
   })
 })
 ```
+or CLI
+```
+$ ytsub uICEJnBuhy0 -l en
+$ ytsub uICEJnBuhy0 -s
+$ ytsub uICEJnBuhy0 -l en -s -o sub.srt
+$ ytsub uICEJnBuhy0 -t el
+$ ytsub list uICEJnBuhy0
+$ ytsub list-translations uICEJnBuhy0
+```
 
 ## YTSubtitles
 
